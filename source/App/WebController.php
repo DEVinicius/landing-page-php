@@ -17,7 +17,10 @@ class WebController{
     }
 
     public function error($data): void{
-        var_dump($data);
+        echo  $this->view->render("error", [
+            "title" => "Erro",
+            "erro" => $data['errcode']
+        ]);
     }
 
 }

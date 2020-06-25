@@ -26,7 +26,6 @@ body{
 }
 
 header{
-    background-color: var(--primary);
     display: flex;
     flex-direction: column;
 }
