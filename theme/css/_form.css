@@ -1,0 +1,29 @@
+:root{
+    --primary: #007fff;
+    --second: #00bfff;
+}
+
+#form{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(to bottom right, var(--primary), var(--second));
+    width: 100vw;
+    height: 50vh;
+    border-radius: 25px;
+}
+
+#form form{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+}
+
+#form form input{
+    margin: 10px 0;
+    padding: 10px 0;
+    border-radius: 25px;
+    width: 75vw;
+}

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= $this->e($title) ?></title>
     <link rel="stylesheet" href="<?= url("/theme/css/_menu.css") ?>">
+    <link rel="stylesheet" href="<?= url("/theme/css/_form.css") ?>">
 </head>
 <body>
     <header>
