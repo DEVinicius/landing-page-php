@@ -7,27 +7,34 @@
     <link rel="stylesheet" href="<?= url("/theme/css/_menu.css") ?>">
 </head>
 <body>
-    <nav id="main_nav">
+    <header>
         <?php 
             if($this->section("sidebar")):
                 echo $this->section("sidebar");
             else:
         ?>
-        <ul>
-            <div class="logo">
-                <li> <a title="home" href="<?= url()?>"><img src="<?= url("/storage/images/mask.png")?>" alt=""></a></li>
-            </div>
-            <div class="menu">  
-                <li><a title="company" href="<?= url("company")?>">Empresa</a></li>
-                <li><a title="user" href="<?= url("user")?>">Usuario</a></li> 
-                <li><a title="ong" href="<?= url("ong")?>">Ong</a></li>   
-            </div>
-        </ul>
-                
+
+        <div class="redes-sociais">
+            <ul>
+                <li>Instagram</li>
+                <li>Facebook</li>
+            </ul>
+        </div>
+        
+        <a href="<?= url()?>" title="logo"><img src="<?= url("/storage/images/mask.png")?>" alt=""></a>
+        
+        <nav class="main_nav">
+            <ul>
+                <li><a href="<?= url("/user")?>" title="user">Usuario</a></li>
+                <li><a href="<?= url("/company")?>" title="company">Company</a></li>
+                <li><a href="<?= url("/ong")?>" title="ong">Ong</a></li>
+            </ul>
+        </nav>
+
         <?php   
             endif;
         ?>
-    </nav>
+    </header>
 
     <main class="main_content">
         <?= $this->section("content");?>
