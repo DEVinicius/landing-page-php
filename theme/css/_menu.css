@@ -26,31 +26,55 @@ body{
 }
 
 header{
-
+    display: flex;
+    flex-direction: column;
 }
 
-.redes-sociais{
-
+header .redes-sociais {
+    display: flex;
+    justify-content: flex-end;
+}
+header .redes-sociais ul{
+    display: flex;
+    flex-direction: row;
 }
 
-header a img{
-    height: 200px;
-    width: 200px;
+header .redes-sociais ul li{
+    padding-left: 5px;
+    margin: 0px 20px;
+    list-style-type: none;
 }
 
-header .main_nav{
+header .redes-sociais ul li a img{
+    height: 50px;
+    width: 50px;
+}
 
+header a{
+    display: flex;
+    justify-content: center;
+}
+
+header a img {
+    height: 150px;
+    width: 150px;
 }
 
 header .main_nav ul{
-
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 header .main_nav ul li{
-
+    list-style-type: none;
+    padding: 0.8rem;
 }
 
 header .main_nav ul li a{
-
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    font-weight: 700;
 }
 

@@ -16,8 +16,8 @@
 
         <div class="redes-sociais">
             <ul>
-                <li>Instagram</li>
-                <li>Facebook</li>
+                <li><a href="" title="instagram"><img src="<?= url("/storage/images/instagram-sketched.svg")?>" alt=""></a></li>
+                <li><a href=""><img src="<?= url("/storage/images/facebook.svg")?>" alt=""></a></li>
             </ul>
         </div>
         
