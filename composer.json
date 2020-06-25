@@ -1,0 +1,25 @@
+{
+    "name": "kind-ad",
+    "description": "Projeto desenvolvido para cadastro de empresas, usuários e ongs",
+    "authors": [
+        {
+            "name": "Vinicius Pereira de Oliveira",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Source\\": "source"
+        },
+        "files": [
+            "source/Config.php"
+        ]
+    },
+    "require": {
+        "ext-pdo": "*",
+        "php":"^7.3",
+        "coffeecode/router": "^1.0",
+        "league/plates": "^3.3",
+        "coffeecode/datalayer": "^1.1"
+    }
+}
