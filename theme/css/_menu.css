@@ -25,6 +25,13 @@ body{
     padding: 0;
     font-family: 'Roboto';
     background-color: var(--background);
+
+    display: grid;
+    grid-template-areas: "header" "main" "footer";
+}
+#cabecalho{
+    display: grid;
+    grid-area: "header";
 }
 
 header{
@@ -80,3 +87,10 @@ header .main_nav ul li a{
     font-weight: 700;
 }
 
+main{
+    grid-area: "main";
+}
+
+footer{
+    grid-area: "footer";
+}

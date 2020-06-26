@@ -1,11 +1,11 @@
-<?php 
+<?php
     $this->insert("_theme", ["title" => $this->e($title)]);
 ?>
-    <h1>Company</h1>
+
     <div id="form">
     <form action="<?= url("company");?>" method="post">
     <div id="input1">
-            <label for="name">Nome    
+            <label for="name">Nome
                 <input type="text" name="name" placeholder="Nome">
             </label>
         </div>
@@ -40,15 +40,15 @@
 
         <input type="submit" value="Enviar" id="send">
 
-        <?php 
+        <?php
             if(!$this->e($message) == null):
         ?>
             <div id="erro">
                 <h4>* <?= $this->e($message); ?></h4s>
             </div>
-        <?php    
+        <?php
             endif;
         ?>
     </form>
-    
+
     </div>
