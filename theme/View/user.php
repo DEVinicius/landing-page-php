@@ -2,8 +2,6 @@
     $this->layout("_theme", ["title" => $this->e($title)]);
 ?>
 
-<h1><?= $this->e($title) ?></h1>
-
 <div id="form">
 
     <form action="<?= url("user");?>" method="post">

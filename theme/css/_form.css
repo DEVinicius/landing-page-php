@@ -4,26 +4,59 @@
 }
 
 #form{
+    background-color: yellow;
     position: relative;
+    padding: 25px 0;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
     justify-content: center;
-    background-image: linear-gradient(to bottom right, var(--primary), var(--second));
-    width: 100vw;
+    width: 75vw;
     height: 50vh;
-    border-radius: 25px;
+    border-radius: 10px;
+    box-shadow:4px 8px #c3c3c3;
 }
 
 #form form{
     display: flex;
     flex-direction: column;
     padding: 10px 0;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: "input1 input2" "input3 input4" "input5 input6" "send";
 }
 
 #form form input{
     margin: 10px 0;
     padding: 10px 0;
-    border-radius: 25px;
-    width: 75vw;
+    border-radius: 10px;
+    width: 20vw;
+}
+
+#form form  #input1{
+    grid-area: input1;
+}
+
+#form form  #input2{
+    grid-area: input2;
+}
+
+#form form  #input3{
+    grid-area: input3;
+}
+
+#form form  #input4{
+    grid-area: input4;
+}
+
+#form form input #input5{
+    grid-area: input5;
+}
+
+#form form input #input6{
+    grid-area: input6;
+}
+
+#form form input #enviar{
+    grid-area: send;
 }
