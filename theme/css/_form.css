@@ -4,13 +4,13 @@
 }
 
 #form{
-    background-color: yellow;
     position: relative;
     padding: 25px 0;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
     justify-content: center;
+    background-color: white ;
     width: 75vw;
     height: 50vh;
     border-radius: 10px;
@@ -23,40 +23,34 @@
     padding: 10px 0;
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: "input1 input2" "input3 input4" "input5 input6" "send";
+    grid-template-columns: auto auto;
 }
 
+#form form div{
+    padding: 0 20px;
+}
 #form form input{
     margin: 10px 0;
     padding: 10px 0;
     border-radius: 10px;
     width: 20vw;
+    display: block;
 }
 
-#form form  #input1{
-    grid-area: input1;
+#form form input #get_info{
+    display: inline-block;
 }
 
-#form form  #input2{
-    grid-area: input2;
+#form form div #erro h5{
+    color: red;
 }
 
-#form form  #input3{
-    grid-area: input3;
-}
-
-#form form  #input4{
-    grid-area: input4;
-}
-
-#form form input #input5{
-    grid-area: input5;
-}
-
-#form form input #input6{
-    grid-area: input6;
-}
-
-#form form input #enviar{
-    grid-area: send;
+#form form #send{
+    background-color: #66ff00;
+    color: white;
+    padding: 0 0 ;
+    width: 10vw;
+    height: 5vh;
+    margin: 0 20px;
+    font-size: 20px;
 }

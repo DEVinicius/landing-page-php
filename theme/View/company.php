@@ -4,22 +4,51 @@
     <h1>Company</h1>
     <div id="form">
     <form action="<?= url("company");?>" method="post">
-        <input type="text" name="name" placeholder="Nome">
-        <input type="email" name="email" placeholder="Email">
-        <input type="text" name="phone" placeholder="Telefone">
-        <input type="text" name="cnpj" placeholder="cnpj (Somente números)">
-        <input type="checkbox" name="get_info" value="1">
-        <label for="get_info">Receber email sobre o serviço</label>
-        <input type="checkbox" name="get_email" value="1">
-        <label for="get_email">Receber emails sobre a plataforma</label>
+    <div id="input1">
+            <label for="name">Nome    
+                <input type="text" name="name" placeholder="Nome">
+            </label>
+        </div>
 
-        <input type="submit" value="Enviar">
+        <div id="input2">
+            <label for="email">Email
+                <input type="email" name="email" placeholder="Email">
+            </label>
+        </div>
+
+        <div id="input3">
+            <label for="phone">phone
+                <input type="text" name="phone" placeholder="Telefone">
+            </label>
+        </div>
+
+        <div id="input4">
+            <label for="cnpj">cnpj
+                <input type="text" name="cnpj" placeholder="cnpj">
+            </label>
+        </div>
+
+        <div id="get_info">
+            <input type="checkbox" name="get_info" value="1">
+            <label for="get_info_service">Receber email sobre o serviço</label>
+        </div>
+
+        <div id="get_email">
+            <input type="checkbox" name="get_email" value="1">
+            <label for="get_email">Receber emails sobre a plataforma</label>
+        </div>
+
+        <input type="submit" value="Enviar" id="send">
+
+        <?php 
+            if(!$this->e($message) == null):
+        ?>
+            <div id="erro">
+                <h4>* <?= $this->e($message); ?></h4s>
+            </div>
+        <?php    
+            endif;
+        ?>
     </form>
-    <?php 
-        if(!$this->e($message) == null):
-    ?>
-        <h5><?= $this->e($message); ?></h5>
-    <?php    
-        endif;
-    ?>
+    
     </div>

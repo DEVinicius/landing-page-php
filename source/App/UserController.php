@@ -21,7 +21,7 @@ class UserController{
             "title" => "User",
             "message" => null
             ]);
-        }
+    }
         
     public function create(array $data):void{
         $validation = new Validation();

@@ -5,15 +5,38 @@
 <div id="form">
 
     <form action="<?= url("user");?>" method="post">
-        <input type="text" name="name" placeholder="Name">
-        <input type="email" name="email" placeholder="Email">
-        <input type="text" name="cpf" placeholder="CPF">
-        <input type="checkbox" name="get_info" value="1">
-        <label for="get_info">Receber Informações sobre o site</label>
-        <input type="checkbox" name="get_email" value="1">
-        <label for="get_email">Receber emails sobre o site</label>
+        <div id="input1">
+            <label for="name">Nome
+                <input type="text" name="name" placeholder="Name">
+            </label>
+        </div>
+
+        <div id="input2">
+            <label for="email">Email
+                <input type="email" name="email" placeholder="Email">
+            </label>
+        </div>
+
+        <div id="input3">
+            <label for="cpf">
+                <input type="text" name="cpf" placeholder="CPF">
+            </label>
+        </div>
         
-        <input type="submit" value="Enviar">
+        <div></div>
+        
+        <div id="get_info">
+            <input type="checkbox" name="get_info" value="1">
+            <label for="get_info">Receber Informações sobre o site</label>
+        </div>
+
+
+        <div id="get_email">
+            <input type="checkbox" name="get_email" value="1">
+            <label for="get_email">Receber emails sobre o site</label>
+        </div>
+
+        <input type="submit" value="Enviar" id="send">
     </form>
     
     <?php 

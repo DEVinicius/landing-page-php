@@ -26,9 +26,9 @@
         
         <nav class="main_nav">
             <ul>
-                <li><a href="<?= url("/user")?>" title="user">Usuario</a></li>
-                <li><a href="<?= url("/company")?>" title="company">Company</a></li>
-                <li><a href="<?= url("/ong")?>" title="ong">Ong</a></li>
+                <li><a href="<?= url("user")?>" title="user">Usuario</a></li>
+                <li><a href="<?= url("company")?>" title="company">Company</a></li>
+                <li><a href="<?= url("ong")?>" title="ong">Ong</a></li>
             </ul>
         </nav>
 
